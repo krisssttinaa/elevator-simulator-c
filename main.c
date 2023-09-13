@@ -9,6 +9,13 @@
 #include<unistd.h> //for Linux and Mac
 //#include<windows.h> //for windows
 
+//Functions to move from one floor to another
+/*The function prompts the user to enter the number of passengers entering the elevator and leaving the elevator, 
+and checks if the new number of passengers will exceed the maximum capacity of the elevator. 
+If it will, it adjusts the number of new passengers accordingly. 
+The function then prints the floor numbers the elevator passes as it moves to the desired floor, 
+and returns the final number of passengers in the elevator. */
+
 int moveWithPassangersTo(short dCurrentFloor, int pdDesiredFloor, short dPassengers, short dMaxPassengers) {
   if (dCurrentFloor == pdDesiredFloor) {
     printf("You are already on this floor.\n");
